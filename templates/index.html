@@ -19,6 +19,10 @@
     <label for="description">Description</label>
     <textarea name="description" id="description" cols="30" rows="2"></textarea>
     <br>
+    <label for="recurring">Is it a recurring event? </label>
+    <input type="checkbox" id="recurring" name="recurring" onclick="True">
+    
+</div>
     <input type="submit" value="Add Event">
 </form>
 <section>
@@ -29,6 +33,7 @@
 <p>{{event.guests}}</p>
 <p>{{event.room_location}}</p>
 <p>{{event.description}}</p>
+<p>{{event.recurring}}</p>
 </div>
   {% endfor %}
 
