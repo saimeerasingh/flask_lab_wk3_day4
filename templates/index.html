@@ -21,7 +21,17 @@
     <br>
     <input type="submit" value="Add Event">
 </form>
+<section>
+{% for event in events   %}
+<div>
+<p>{{event.date}}</p>
+<p>{{event.event_name}}</p>
+<p>{{event.guests}}</p>
+<p>{{event.room_location}}</p>
+<p>{{event.description}}</p>
+</div>
+  {% endfor %}
 
-
+</section>
     
 {% endblock  %}
